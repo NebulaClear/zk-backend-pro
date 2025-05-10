@@ -29,6 +29,33 @@ export default [
     component: './Welcome',
   },
   {
+    path: '/country_system',
+    name: 'country_system',
+    icon: 'bank',
+    // access: 'canAdmin',
+    routes: [
+      {
+        path: '/country_system',
+        redirect: '/country_system/counrty',
+      },
+      {
+        path: '/country_system/counrty',
+        name: 'country',
+        component: './CountrySysytem/Country',
+      },
+      {
+        path: '/country_system/language',
+        name: 'language',
+        component: './CountrySysytem/Language',
+      },
+      {
+        path: '/country_system/times',
+        name: 'times',
+        component: './CountrySysytem/Times',
+      },
+    ],
+  },
+  {
     path: '/contact_info',
     name: 'contact_info',
     icon: 'smile',

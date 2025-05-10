@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
       }}
       links={[
         {
-          key: '​​中科EduLink',
+          key: '​​中科EduLink1',
           title: '​​中科EduLink',
           href: 'https://pro.ant.design',
           blankTarget: true,
@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
           blankTarget: true,
         },
         {
-          key: '​​中科EduLink',
+          key: '​​中科EduLink2',
           title: '​​中科EduLink',
           href: 'https://ant.design',
           blankTarget: true,

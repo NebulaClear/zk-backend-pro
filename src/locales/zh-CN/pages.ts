@@ -1,5 +1,5 @@
 export default {
-  'pages.layouts.userLayout.title': '​​中科EduLink 是西湖区最具影响力的 Web 设计规范',
+  'pages.layouts.userLayout.title': '​​中科EduLink管理系统',
   'pages.login.accountLogin.tab': '账户密码登录',
   'pages.login.accountLogin.errorMessage': '错误的用户名和密码(admin/ant.design)',
   'pages.login.failure': '登录失败，请重试！',
@@ -64,4 +64,7 @@ export default {
   'pages.searchTable.tenThousand': '万',
   'pages.searchTable.batchDeletion': '批量删除',
   'pages.searchTable.batchApproval': '批量审批',
+  'table.actions':'操作',
+  'button.edit':'编辑',
+  'button.delete':'删除',
 };

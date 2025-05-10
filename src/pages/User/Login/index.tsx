@@ -2,12 +2,12 @@ import { Footer } from '@/components';
 import { login } from '@/services/ant-design-pro/api';
 import { getFakeCaptcha } from '@/services/ant-design-pro/login';
 import {
-  AlipayCircleOutlined,
+  // AlipayCircleOutlined,
   LockOutlined,
   MobileOutlined,
-  TaobaoCircleOutlined,
+  // TaobaoCircleOutlined,
   UserOutlined,
-  WeiboCircleOutlined,
+  // WeiboCircleOutlined,
 } from '@ant-design/icons';
 import {
   LoginForm,
@@ -58,17 +58,17 @@ const useStyles = createStyles(({ token }) => {
   };
 });
 
-const ActionIcons = () => {
-  const { styles } = useStyles();
+// const ActionIcons = () => {
+//   const { styles } = useStyles();
 
-  return (
-    <>
-      <AlipayCircleOutlined key="AlipayCircleOutlined" className={styles.action} />
-      <TaobaoCircleOutlined key="TaobaoCircleOutlined" className={styles.action} />
-      <WeiboCircleOutlined key="WeiboCircleOutlined" className={styles.action} />
-    </>
-  );
-};
+//   return (
+//     <>
+//       <AlipayCircleOutlined key="AlipayCircleOutlined" className={styles.action} />
+//       <TaobaoCircleOutlined key="TaobaoCircleOutlined" className={styles.action} />
+//       <WeiboCircleOutlined key="WeiboCircleOutlined" className={styles.action} />
+//     </>
+//   );
+// };
 
 const Lang = () => {
   const { styles } = useStyles();
@@ -97,7 +97,7 @@ const LoginMessage: React.FC<{
 
 const Login: React.FC = () => {
   const [userLoginState, setUserLoginState] = useState<API.LoginResult>({});
-  const [type, setType] = useState<string>('account');
+  const [type, setType] = useState<string>('mobile');
   const { initialState, setInitialState } = useModel('@@initialState');
   const { styles } = useStyles();
   const intl = useIntl();
@@ -172,14 +172,14 @@ const Login: React.FC = () => {
           initialValues={{
             autoLogin: true,
           }}
-          actions={[
-            <FormattedMessage
-              key="loginWith"
-              id="pages.login.loginWith"
-              defaultMessage="其他登录方式"
-            />,
-            <ActionIcons key="icons" />,
-          ]}
+          // actions={[
+          //   <FormattedMessage
+          //     key="loginWith"
+          //     id="pages.login.loginWith"
+          //     defaultMessage="其他登录方式"
+          //   />,
+          //   <ActionIcons key="icons" />,
+          // ]}
           onFinish={async (values) => {
             await handleSubmit(values as API.LoginParams);
           }}
@@ -189,13 +189,13 @@ const Login: React.FC = () => {
             onChange={setType}
             centered
             items={[
-              {
-                key: 'account',
-                label: intl.formatMessage({
-                  id: 'pages.login.accountLogin.tab',
-                  defaultMessage: '账户密码登录',
-                }),
-              },
+              // {
+              //   key: 'account',
+              //   label: intl.formatMessage({
+              //     id: 'pages.login.accountLogin.tab',
+              //     defaultMessage: '账户密码登录',
+              //   }),
+              // },
               {
                 key: 'mobile',
                 label: intl.formatMessage({

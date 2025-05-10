@@ -61,7 +61,8 @@ export const layout: RunTimeLayoutConfig = ({ initialState, setInitialState }) =
       },
     },
     waterMarkProps: {
-      content: initialState?.currentUser?.name,
+      // content: initialState?.currentUser?.name,
+      content: '大哉乾元！万物资始，乃统天。',
     },
     footerRender: () => <Footer />,
     onPageChange: () => {
@@ -135,4 +136,13 @@ export const layout: RunTimeLayoutConfig = ({ initialState, setInitialState }) =
  */
 export const request = {
   ...errorConfig,
+};
+
+export const dva = {
+  config: {
+    onError(e: Error) {
+      console.error(e.message);
+    },
+  },
+  // plugins: [createLoading()],
 };

@@ -15,7 +15,7 @@
   "paths": {
     "/api/currentUser": {
       "get": {
-        "tags": ["api"],
+        "tags": ["apis"],
         "description": "获取当前的用户",
         "operationId": "currentUser",
         "responses": {

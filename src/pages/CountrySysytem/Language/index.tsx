@@ -8,7 +8,7 @@ import React from 'react';
  * @returns
  */
 
-const ContactInfo: React.FC = () => {
+const Language: React.FC = () => {
   // const { token } = theme.useToken();
   return (
     <PageContainer>
@@ -33,11 +33,11 @@ const ContactInfo: React.FC = () => {
               flexWrap: 'wrap',
               gap: 16,
             }}
-          >asdsdasd</div>
+          >Language</div>
         </div>
       </Card>
     </PageContainer>
   );
 };
 
-export default ContactInfo;
+export default Language;
